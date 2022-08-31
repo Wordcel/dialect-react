@@ -59,9 +59,9 @@ export function Footer(): JSX.Element {
         </div>
       </div>
       <div className="dt-px-4 dt-py-2 dt-flex dt-items-center dt-justify-center">
-        <span className={clsx('dt-opacity-40', textStyles.small)}>
+        {/* <span className={clsx('dt-opacity-40', textStyles.small)}>
           {UI_VERSION} / {SDK_VERSION}
-        </span>
+        </span> */}
       </div>
     </div>
   );
