@@ -8,7 +8,9 @@ import { useTheme } from '../common/providers/DialectThemeProvider';
 import { useDialectUiId } from '../common/providers/DialectUiManagementProvider';
 import type { Channel } from '../common/types';
 import IconButton from '../IconButton';
-import Notifications, { NotificationType } from '../Notifications';
+import WordcelNotifications, {
+  NotificationType,
+} from '../WordcelNotifications';
 
 const DEFAULT_POLLING_FOR_NOTIFICATIONS = 15000; // 15 sec refresh default
 
@@ -87,7 +89,7 @@ function WrappedNotificationsButton(props: PropTypes): JSX.Element {
           // className="dt-w-full dt-h-full bg-white/10"
           // style={{ backdropFilter: 'blur(132px)' }}
         >
-          <Notifications
+          <WordcelNotifications
             channels={props.channels}
             notifications={props?.notifications}
             onModalClose={close}
