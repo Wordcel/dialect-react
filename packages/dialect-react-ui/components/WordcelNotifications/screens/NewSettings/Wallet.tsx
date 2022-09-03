@@ -201,7 +201,7 @@ const Wallet = ({
       </div>
 
       {walletEnabled && (
-        <div className="dt-flex dt-flex-row dt-space-x-2 dt-items-center dt-justify-between dt-mt-3">
+        <div className="dt-flex dt-flex-row dt-space-x-2 dt-items-center dt-justify-between dt-mt-[17px]">
           <P className={clsx(colors.label, textStyles.label, 'dt-opacity-60')}>
             Notifications {subscriptionEnabled ? 'on' : 'off'}
           </P>

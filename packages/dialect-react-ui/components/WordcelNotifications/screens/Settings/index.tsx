@@ -37,7 +37,7 @@ export const NotificationToggle = ({
 }: RenderNotificationTypeParams) => {
   const { highlighted, colors, textStyles } = useTheme();
   return (
-    <div className={clsx(highlighted, 'dt-mb-2', colors.highlight)}>
+    <div className={clsx('dt-mb-[23px]', colors.highlight)}>
       <div className="dt-flex dt-justify-between">
         <span className={clsx(textStyles.body)}>{name}</span>
         {type !== 'local' && (
@@ -51,7 +51,7 @@ export const NotificationToggle = ({
       </div>
 
       {detail && (
-        <P className={clsx(textStyles.small, 'dt-mb-1 dt-mt-1 dt-opacity-60')}>
+        <P className={clsx(textStyles.label, 'dt-opacity-60')}>
           {detail}
         </P>
       )}
@@ -90,7 +90,7 @@ function Settings({
 
   return (
     <>
-      <div className={clsx('dt-pt-4 dt-pb-2 dt-px-4')}>
+      <div className={clsx('dt-pt-[26px] dt-px-4')}>
         {channels.map((channelSlug) => {
           let form;
           if (channelSlug === 'web3') {
@@ -103,13 +103,13 @@ function Settings({
             form = <Telegram />;
           }
           return (
-            <div key={channelSlug} className="dt-mb-2">
+            <div key={channelSlug} className="dt-mb-[26px]">
               {form}
             </div>
           );
         })}
       </div>
-      <div className="dt-mt-2 dt-mb-6 dt-px-4">
+      <div className="dt-mt-2 dt-mb-[17px]">
         <Divider />
       </div>
       <div className="dt-px-4">
@@ -160,7 +160,7 @@ function Settings({
         <P
           className={clsx(
             textStyles.small,
-            'dt-opacity-50 dt-text-center dt-py-4 dt-px-12'
+            'dt-opacity-50 dt-text-center dt-pt-[13px] dt-pb-[17px] dt-px-[50px]'
           )}
         >
           By enabling notifications you agree to our{' '}

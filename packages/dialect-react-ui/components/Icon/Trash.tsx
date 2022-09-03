@@ -2,21 +2,19 @@ import type { SVGProps } from 'react';
 
 const SvgTrash = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={16}
-    height={16}
+    width={20}
+    height={20}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio='xMidYMid'
-    viewBox="0 0 24 24"
+    viewBox="0 0 20 20"
     {...props}
   >
-    <path
-      d="M4 7h16m-1 0-.867 12.142A2 2 0 0 1 16.138 21H7.862a2 2 0 0 1-1.995-1.858L5 7h14Zm-9 4v6-6Zm4 0v6-6Zm1-4V4a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3h6Z"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+<path 
+  fillRule="evenodd" 
+  clipRule="evenodd" 
+  d="M12.0834 2.5L7.91669 2.5L7.08335 3.33333H4.16669V5H15.8334V3.33333L12.9167 3.33333L12.0834 2.5ZM13.3334 7.5V15.8333H6.66669L6.66669 7.5L13.3334 7.5ZM5.00002 5.83333H15V15.8333C15 16.75 14.25 17.5 13.3334 17.5H6.66669C5.75002 17.5 5.00002 16.75 5.00002 15.8333L5.00002 5.83333Z" 
+  fill="#CBD5E1"/>
   </svg>
 );
 

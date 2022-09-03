@@ -40,10 +40,10 @@ export function Footer(): JSX.Element {
 
   return (
     <div>
-      <div className="dt-flex dt-justify-center dt-py-3">
+      <div className="dt-flex dt-justify-center dt-pb-3">
         <div
           className={clsx(
-            'dt-px-3 dt-py-1 dt-inline-flex dt-items-center dt-justify-center dt-uppercase dt-rounded-full dt-text-[10px]',
+            'dt-px-3 dt-py-1 dt-inline-flex dt-items-center dt-justify-center dt-uppercase dt-text-[8px]',
             colors.highlightSolid
           )}
         >
@@ -54,15 +54,15 @@ export function Footer(): JSX.Element {
             rel="noreferrer"
             className="hover:dt-text-inherit"
           >
-            <DialectLogo className="dt-ml-[3px] -dt-mt-[1px]" />
+            <DialectLogo className="dt-ml-[9px] -dt-mt-[1px]" />
           </A>
         </div>
       </div>
-      <div className="dt-px-4 dt-py-2 dt-flex dt-items-center dt-justify-center">
-        {/* <span className={clsx('dt-opacity-40', textStyles.small)}>
+      {/* <div className="dt-px-4 dt-py-2 dt-flex dt-items-center dt-justify-center">
+        <span className={clsx('dt-opacity-40', textStyles.xsmall)}>
           {UI_VERSION} / {SDK_VERSION}
-        </span> */}
-      </div>
+        </span>
+      </div> */}
     </div>
   );
 }
@@ -154,15 +154,15 @@ export function Toggle({
 
   const size = toggleSize || 'M';
   const translate =
-    size === 'M' ? 'dt-translate-x-[160%]' : 'dt-translate-x-3/4';
+    size === 'M' ? 'dt-translate-x-[190%]' : 'dt-translate-x-3/4';
 
   return (
     <Label
       className={clsx(
         props.disabled ? 'dt-cursor-not-allowed' : 'dt-cursor-pointer',
-        'dt-flex dt-items-center dt-relative dt-h-5 dt-w-10',
+        'dt-flex dt-items-center dt-relative dt-h-[15px] dt-w-[37px]',
         size === 'M'
-          ? 'dt-h-5 dt-w-10 dt-rounded-full'
+          ? 'dt-h-[15px] dt-w-[37px] dt-rounded-full'
           : 'dt-h-4 dt-w-7 dt-rounded-full'
       )}
     >
@@ -178,14 +178,14 @@ export function Toggle({
         className={clsx(
           checked ? colors.toggleBackgroundActive : colors.toggleBackground,
           size === 'M'
-            ? 'dt-h-5 dt-w-10 dt-rounded-full'
+            ? 'dt-h-[15px] dt-w-[37px] dt-rounded-full'
             : 'dt-h-4 dt-w-7 dt-rounded-full'
         )}
       />
       {/* Thumb */}
       <span
         className={clsx(
-          'dt-absolute dt-top-1 dt-left-1 dt-rounded-full dt-h-3 dt-w-3 dt-transition dt-shadow-sm',
+          'dt-absolute dt-top-[2px] dt-left-[3px] dt-rounded-full dt-h-[11px] dt-w-[11px] dt-transition dt-shadow-sm',
           colors.toggleThumb,
           checked ? translate : ''
         )}

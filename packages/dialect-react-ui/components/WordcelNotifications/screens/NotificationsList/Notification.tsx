@@ -20,43 +20,59 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', {
 export const Notification = ({ message, timestamp }: Props) => {
   const { colors, textStyles, notificationMessage, notificationTimestamp } =
     useTheme();
-  console.log('message', message);
-  console.log('timestamp', timestamp);
+
+  let parsedMessage;
+  let profile, link: string, text, name;
+  try {
+    parsedMessage = JSON.parse(message);
+    profile = parsedMessage.profile;
+    link = parsedMessage.link;
+    text = parsedMessage.message;
+    name = parsedMessage.name;
+  } catch (e) {
+    parsedMessage = message;
+    profile = 'https://nftstorage.link/ipfs/bafybeidempjtydftpn6txv3wraqj36pkpnzkkmxvf4qlc3a4sl4wl23agu/wordcel.png';
+    link = ''
+    name = ''
+    text = message;
+  }
   return (
     <div
       className={clsx(
-        'dt-flex dt-flex-col',
+        'dt-flex dt-flex-col z-10 bg-slate-50',
         colors.highlight,
         notificationMessage
       )}
       onClick={() => {
-        window.open('https://wordcel.club', '_blank');
+        if (link) {
+          window.open(link, '_blank');
+        }
       }}
     >
       <div className="dt-flex-1">
-        <div className="dt-flex dt-flex-row dt-items-start dt-mb-1 ">
+        <div className="dt-flex dt-flex-row dt-items-start dt-mb-1 text-[#ff5151]">
           <img
-            src="https://arweave.net/HXk7c5-EuWQ1umsxpDcVlWCz4bqU0zJy_ZCyaNz5MrI?ext=png"
-            width={30}
-            height={30}
-            className="dt-rounded-full dt-mr-2"
+            src={profile}
+            width={33}
+            height={33}
+            className="dt-rounded-full dt-mr-2 border-1 border-[#E5E5E5]"
           />
-          <p className="dt-font-normal dt-text-md">
-            {' '}
-            <LinkifiedText>{message}</LinkifiedText>{' '}
-          </p>
-        </div>
-        {/* <P
+          <div
           className={clsx(
             textStyles.body,
             'dt-break-words dt-whitespace-pre-wrap dt-font-medium dt-text-base'
           )}
         >
-          <LinkifiedText>{message}</LinkifiedText>
-        </P> */}
+          {' '}
+            <span style={{
+              color: '#475668',
+            }}>{name}</span> {text}{' '}
+        </div>
+        </div>
+
       </div>
       <div className={notificationTimestamp}>
-        <P className={clsx(textStyles.small, 'dt-opacity-60')}>
+        <P className={clsx(textStyles.small, 'dt-opacity-60')} style={{ color: '#CBD5E1' }}>
           {timeFormatter.format(timestamp)}
         </P>
       </div>

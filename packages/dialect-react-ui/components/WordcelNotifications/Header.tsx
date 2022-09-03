@@ -75,14 +75,14 @@ function Header(props: {
           <div className="dt-flex dt-flex-row dt-items-center">
             {props.isWeb3Enabled && <BackButton />}
             {!props.isWeb3Enabled && <MasterBackButton />}
-            <span className={clsx(textStyles.header, colors.accent)}>
+            <span className={clsx(textStyles.body, colors.accent)}>
               Notification Settings
             </span>
           </div>
         ) : (
           <>
             <MasterBackButton />
-            <span className={clsx(textStyles.header, colors.accent)}>
+            <span className={clsx(textStyles.body, colors.accent)}>
               Notifications
             </span>
           </>

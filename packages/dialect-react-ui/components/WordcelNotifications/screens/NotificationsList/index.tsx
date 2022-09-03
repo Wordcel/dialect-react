@@ -46,7 +46,7 @@ const NotificationsList = ({ refreshInterval }: NotificationsListProps) => {
   }
 
   return (
-    <div className="dt-py-4">
+    <div className="dt-py-0">
       {messages.map((message, idx) => (
         <React.Fragment key={idx}>
           <Notification
