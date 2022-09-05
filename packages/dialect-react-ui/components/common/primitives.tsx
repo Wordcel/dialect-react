@@ -39,11 +39,10 @@ export function Footer(): JSX.Element {
   const { colors, textStyles } = useTheme();
 
   return (
-    <div>
-      <div className="dt-flex dt-justify-center dt-pb-3">
+      <div className="dt-flex dt-justify-center">
         <div
           className={clsx(
-            'dt-px-3 dt-py-1 dt-inline-flex dt-items-center dt-justify-center dt-uppercase dt-text-[8px]',
+            'dt-px-3 dt-pb-3 dt-inline-flex dt-items-center dt-justify-center dt-uppercase dt-text-[8px]',
             colors.highlightSolid
           )}
         >
@@ -54,16 +53,15 @@ export function Footer(): JSX.Element {
             rel="noreferrer"
             className="hover:dt-text-inherit"
           >
-            <DialectLogo className="dt-ml-[9px] -dt-mt-[1px]" />
+            <DialectLogo className="dt-ml-[9px] dt-mt-[1px] dt-mb-[2px]" />
           </A>
         </div>
-      </div>
       {/* <div className="dt-px-4 dt-py-2 dt-flex dt-items-center dt-justify-center">
         <span className={clsx('dt-opacity-40', textStyles.xsmall)}>
           {UI_VERSION} / {SDK_VERSION}
         </span>
       </div> */}
-    </div>
+      </div>
   );
 }
 
