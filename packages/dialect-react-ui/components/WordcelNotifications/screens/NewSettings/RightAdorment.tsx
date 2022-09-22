@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { Button, Loader } from '../../../common';
 import { useTheme } from '../../../common/providers/DialectThemeProvider';
 import IconButton from '../../../IconButton';
+import Check from '../../../Icon/Check';
 
 interface IRightAdorment {
   loading: boolean;
@@ -49,7 +50,7 @@ export const RightAdornment = ({
           onClick={onSaveCallback}
           className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
         >
-          Submit
+        <Check />
         </Button>
       );
     }
@@ -86,7 +87,7 @@ export const RightAdornment = ({
           onClick={onUpdateCallback}
           className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
         >
-          Submit
+          <Check />
         </Button>
       )}
     </>

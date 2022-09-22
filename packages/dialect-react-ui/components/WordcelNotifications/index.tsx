@@ -114,7 +114,7 @@ function InnerNotifications(props: NotificationsProps): JSX.Element {
       />
       <div
         className={clsx(
-          'dt-h-full dt-overflow-y-auto dt-pb-[3rem]',
+          'dt-h-full dt-overflow-y-auto dt-pb-[3em]',
           scrollbar
         )}
       >

@@ -17,6 +17,7 @@ import { shortenAddress } from '../../../../utils/displayUtils';
 import { Button, Loader, Toggle } from '../../../common';
 import { P } from '../../../common/preflighted';
 import { useTheme } from '../../../common/providers/DialectThemeProvider';
+import { Check } from '../../../Icon';
 import IconButton from '../../../IconButton';
 
 type Web3Props = {
@@ -165,7 +166,7 @@ const Wallet = ({
                 onClick={fullEnableWallet}
                 className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
               >
-                Enable
+                <Check />
               </Button>
             )}
             {/* when address exists but no thread */}
@@ -174,7 +175,7 @@ const Wallet = ({
                 onClick={createWalletThread}
                 className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
               >
-                Enable
+                <Check />
               </Button>
             )}
             {/* when thread exists but no address

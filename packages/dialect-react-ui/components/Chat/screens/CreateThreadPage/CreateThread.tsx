@@ -189,7 +189,7 @@ export default function CreateThread({
         <Header.Icons />
       </Header>
 
-      <div className="dt-flex-1 dt-pb-8 dt-max-w-sm dt-min-w-[24rem] dt-m-auto dt-flex dt-flex-col dt-px-2">
+      <div className="dt-flex-1 dt-pb-8 dt-max-w-sm dt-min-w-[24em] dt-m-auto dt-flex dt-flex-col dt-px-2">
         <H1
           className={clsx(
             textStyles.h1,

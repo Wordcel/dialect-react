@@ -54,7 +54,7 @@ function ToastMessage({
         <div
           className={clsx(
             toast,
-            'dt-max-w-[100vw-2rem] dt-mx-2 dt-flex dt-items-center dt-space-between'
+            'dt-max-w-[100vw-2em] dt-mx-2 dt-flex dt-items-center dt-space-between'
           )}
         >
           <div className="dt-flex dt-items-center dt-space-x-2">

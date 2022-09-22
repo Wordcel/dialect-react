@@ -26,15 +26,19 @@ const NotAuthorizedError = () => {
         {hardwareWalletForced ? 'transaction' : 'message'}. It is free and does
         not involve the network.
       </span>
-      <div className="dt-w-[80%]">
+      <div className="dt-w-[305px] dt-h-[36px]">
         <ToggleSection
           noBorder
           title="Using ledger?"
           checked={hardwareWalletForced}
           onChange={(next) => setHardwareWalletForced(next)}
         />
-        <Button onClick={initiateConnection} className="dt-w-full dt-mt-2">
-          {hardwareWalletForced ? 'Sign transaction' : 'Sign message'}
+        <Button 
+          onClick={initiateConnection} 
+          className="dt-w-full dt-mt-2"
+          defaultStyle=' dt-bg-[#1E293B] dt-rounded-[28px] dt-w-[305px] dt-h-[36px]'
+          >
+          {hardwareWalletForced ? 'Sign Transaction' : 'Sign Message'}
         </Button>
       </div>
     </Centered>
