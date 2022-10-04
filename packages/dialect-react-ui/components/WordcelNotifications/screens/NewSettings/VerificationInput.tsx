@@ -80,7 +80,9 @@ export const VerificationInput = ({
             onClick={sendCode}
             className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
           >
-            <Check />
+            <span className=' dt-ml-1 dt-text-[#64758B] '>
+              Submit
+            </span>
           </Button>
         }
       />

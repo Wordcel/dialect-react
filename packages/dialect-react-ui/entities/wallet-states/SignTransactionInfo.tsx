@@ -12,7 +12,7 @@ const SignTransactionInfo = () => {
       >
         <Loader className="dt-mr-2" /> Waiting for your wallet
       </H3>
-      <P className="dt-text-center dt-max-w-sm dt-opacity-50">
+      <P className="dt-text-center dt-max-w-sm dt-opacity-50 dt-font-inter dt-text-xs dt-font-medium dt-text-[#94A3B8]">
         To continue please prove you own this wallet by signing a transaction.
         This transaction <b>will not</b> be submited to the blockchain, and is
         free.

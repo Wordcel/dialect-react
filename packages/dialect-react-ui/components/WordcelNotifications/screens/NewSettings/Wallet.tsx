@@ -164,18 +164,24 @@ const Wallet = ({
             {!thread && !walletAddress && !isLoading && (
               <Button
                 onClick={fullEnableWallet}
-                className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+                className={clsx('dt-w-[72px] dt-h-[28px] dt-px-0')}
               >
                 <Check />
+                <span className=' dt-ml-1 dt-text-[#64758B] '>
+                  Enable
+                </span>
               </Button>
             )}
             {/* when address exists but no thread */}
             {walletAddress && !thread && !isLoading && (
               <Button
                 onClick={createWalletThread}
-                className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+                className={clsx( 'dt-w-[72px] dt-h-[28px] dt-px-0')}
               >
                 <Check />
+                <span className=' dt-ml-1 dt-text-[#64758B] '>
+                  Enable
+                </span>
               </Button>
             )}
             {/* when thread exists but no address
@@ -183,9 +189,12 @@ const Wallet = ({
             {thread && !walletAddress && !isLoading && (
               <Button
                 onClick={createWalletAddress}
-                className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+                className={clsx('dt-w-[72px] dt-h-[28px] dt-px-0')}
               >
-                Enable
+                <Check />
+                <span className=' dt-ml-1 dt-text-[#64758B] '>
+                  Enable
+                </span>
               </Button>
             )}
             {isLoading && (

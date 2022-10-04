@@ -18,8 +18,7 @@ const NotAuthorizedError = () => {
       </H3>
       <span
         className={clsx(
-          textStyles.body,
-          'dt-flex dt-items-center dt-mb-4 dt-w-[80%] dt-text-center'
+          'dt-flex dt-items-center dt-mb-4 dt-w-[80%] dt-text-center dt-font-inter dt-text-xs dt-font-medium dt-text-[#94A3B8]'
         )}
       >
         To continue, please prove you own this wallet by signing a{' '}
@@ -35,8 +34,8 @@ const NotAuthorizedError = () => {
         />
         <Button 
           onClick={initiateConnection} 
-          className="dt-w-full dt-mt-2"
-          defaultStyle=' dt-bg-[#1E293B] dt-rounded-[28px] dt-w-[305px] dt-h-[36px]'
+          className="dt-w-full dt-mt-2 dt-text-white "
+          defaultStyle=' dt-bg-[#1E293B] dt-rounded-[28px] dt-w-[305px] dt-h-[36px] dt-text-xs dt-font-medium dt-text-center dt-flex dt-items-center dt-justify-center'
           >
           {hardwareWalletForced ? 'Sign Transaction' : 'Sign Message'}
         </Button>

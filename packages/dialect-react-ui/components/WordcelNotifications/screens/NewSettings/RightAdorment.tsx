@@ -48,9 +48,12 @@ export const RightAdornment = ({
       return (
         <Button
           onClick={onSaveCallback}
-          className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+          className={clsx(addormentButton, 'dt-w-[72px] dt-h-[28px] dt-px-0')}
         >
         <Check />
+        <span className=' dt-ml-1 dt-text-[#64758B] '>
+          Enable
+        </span>
         </Button>
       );
     }
@@ -71,7 +74,7 @@ export const RightAdornment = ({
       return (
         <Button
           onClick={onDeleteCallback}
-          className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+          className={clsx(addormentButton, 'dt-w-[72px] dt-h-[28px] dt-px-0 dt-text-[#64758B]')}
         >
           Delete
         </Button>
@@ -85,9 +88,12 @@ export const RightAdornment = ({
       {isChanging && isChanging && (
         <Button
           onClick={onUpdateCallback}
-          className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+          className={clsx(addormentButton, 'dt-w-[72px] dt-h-[28px] dt-px-0')}
         >
           <Check />
+          <span className=' dt-ml-1 dt-text-[#64758B] '>
+            Update
+          </span>
         </Button>
       )}
     </>

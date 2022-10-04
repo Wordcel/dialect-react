@@ -1,6 +1,6 @@
 {
   "name": "@wordcel/dialect-react",
-  "version": "1.0.0-beta.1.6",
+  "version": "1.0.0-beta.1.7",
   "description": "Dialect's react UI components for use in Wordcel",
   "license": "MIT",
   "private": false,
