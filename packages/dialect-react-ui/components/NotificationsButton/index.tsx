@@ -70,7 +70,7 @@ function WrappedNotificationsButton(props: PropTypes): JSX.Element {
       <IconButton
         ref={bellRef}
         className={clsx(
-          'dt-flex dt-items-center dt-justify-center dt-rounded-full focus:dt-outline-none dt-shadow-md',
+          'dt-flex dt-items-center dt-justify-center dt-rounded-full focus:dt-outline-none',
           colors.bg,
           bellButton
         )}

@@ -168,19 +168,19 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
     // Uses `react-transition-group
     bottomSlide: {
       enter: 'dt-transition-transform dt-duration-300 dt-ease-in-out',
-      enterFrom: 'dt-translate-y-[calc(100%-3.5rem)]',
+      enterFrom: 'dt-translate-y-[calc(100%-3.5em)]',
       enterTo: '!dt-translate-y-0',
       leave: 'dt-transition-transform dt-duration-100 dt-ease-in-out',
       leaveFrom: 'dt-translate-y-0',
-      leaveTo: '!dt-translate-y-[calc(100%-3.5rem)]',
+      leaveTo: '!dt-translate-y-[calc(100%-3.5em)]',
     },
     toast: {
       enter: 'dt-transition dt-ease-in-out dt-duration-150',
-      enterFrom: 'dt-opacity-0 dt-translate-y-[calc(100%+1rem)]',
+      enterFrom: 'dt-opacity-0 dt-translate-y-[calc(100%+1em)]',
       enterTo: 'dt-opacity-100 !dt-translate-y-0',
       leave: 'dt-transition dt-ease-in-out dt-duration-150',
       leaveFrom: 'dt-opacity-100 dt-translate-y-0',
-      leaveTo: 'dt-opacity-0 !dt-translate-y-[calc(100%+1rem)]',
+      leaveTo: 'dt-opacity-0 !dt-translate-y-[calc(100%+1em)]',
     },
   },
   light: {
@@ -209,11 +209,11 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
     },
     // TODO: simplify setting just font-family
     textStyles: {
-      h1: 'dt-font-inter dt-text-[1.625rem] dt-font-bold',
+      h1: 'dt-font-inter dt-text-[1.625em] dt-font-bold',
       input: 'dt-font-inter',
       body: 'dt-font-inter dt-text-sm dt-font-normal',
       small: 'dt-font-inter dt-text-xs dt-font-normal',
-      xsmall: 'dt-font-inter dt-text-[0.6875rem] dt-font-normal',
+      xsmall: 'dt-font-inter dt-text-[0.6875em] dt-font-normal',
       bigText: 'dt-font-inter dt-text-lg dt-font-medium',
       header: 'dt-font-inter dt-text-base dt-font-medium',
       buttonText: 'dt-font-inter dt-text-base',
@@ -248,12 +248,12 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
     sendButton: 'dt-h-5 dt-w-5 dt-text-white dt-rounded-full dt-bg-black',
     linkButton:
       'dt-inline-flex dt-items-center dt-transition-opacity dt-cursor-pointer hover:dt-opacity-50',
-    header: 'dt-max-h-[3.5rem] dt-min-h-[3.5rem] dt-px-2',
+    header: 'dt-max-h-[3.5em] dt-min-h-[3.5em] dt-px-2',
     sectionHeader: 'dt-px-4',
     input:
       'dt-text-xs dt-text-neutral-700 dt-px-2 dt-py-2 dt-border-b dt-border-neutral-600 focus:dt-rounded-md dt-outline-none focus:dt-ring focus:dt-ring-black focus:dt-border-0 disabled:dt-text-neutral-700/50',
     outlinedInput:
-      'dt-text-sm dt-h-[3.75rem] dt-text-white dt-bg-subtle-night dt-px-3 dt-py-2.5 dt-border-2 dt-border-neutral-600 dt-rounded-lg focus-within:dt-bg-black  focus-within:dt-border-white focus:dt-outline-none dt-rounded-2xl',
+      'dt-text-sm dt-h-[3.75em] dt-text-white dt-bg-subtle-night dt-px-3 dt-py-2.5 dt-border-2 dt-border-neutral-600 dt-rounded-lg focus-within:dt-bg-black  focus-within:dt-border-white focus:dt-outline-none dt-rounded-2xl',
     textArea:
       'dt-text-sm dt-text-neutral-800 dt-bg-white dt-border dt-rounded-2xl dt-px-2 dt-py-1 dt-border-neutral-300 dt-placeholder-neutral-400 dt-pr-10 dt-outline-none disabled:dt-text-neutral-800/50',
     messageBubble: 'dt-text-black dt-px-4 dt-py-2 dt-rounded-2xl dt-text-white',
@@ -266,10 +266,10 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
     notificationsDivider: 'dt-hidden',
     notificationHeader: 'dt-border-b dt-border-neutral-300',
     modalWrapper:
-      'dt-fixed dt-z-50 dt-top-0 dt-w-full dt-h-full dt-right-0 sm:dt-absolute sm:dt-top-16 sm:dt-w-[30rem] sm:dt-h-[40rem]',
+      'dt-fixed dt-z-50 dt-top-0 dt-w-full dt-h-full dt-right-0 sm:dt-absolute sm:dt-top-16 sm:dt-w-[30em] sm:dt-h-[40em]',
     modal: 'dt-rounded-none dt-shadow-md sm:dt-rounded-3xl',
     sliderWrapper:
-      'dt-fixed dt-z-50 dt-top-0 dt-bottom-0 dt-w-full dt-h-full sm:dt-w-[30rem] sm:dt-h-[40rem] sm:dt-right-10 sm:dt-top-auto dt-bottom-0',
+      'dt-fixed dt-z-50 dt-top-0 dt-bottom-0 dt-w-full dt-h-full sm:dt-w-[30em] sm:dt-h-[40em] sm:dt-right-10 sm:dt-top-auto dt-bottom-0',
     slider: 'dt-rounded-none dt-shadow-md sm:dt-rounded-t-3xl',
     button:
       'dt-bg-black dt-text-white dt-border dt-border-black hover:dt-opacity-60',
@@ -309,11 +309,11 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
       label: 'dt-text-white/60',
     },
     textStyles: {
-      h1: 'dt-font-inter dt-text-[1.625rem] dt-font-bold',
+      h1: 'dt-font-inter dt-text-[1.625em] dt-font-bold',
       input: 'dt-font-inter',
       body: 'dt-font-inter dt-text-sm dt-font-normal',
       small: 'dt-font-inter dt-text-xs dt-font-normal',
-      xsmall: 'dt-font-inter dt-text-[0.6875rem] dt-font-normal',
+      xsmall: 'dt-font-inter dt-text-[0.6875em] dt-font-normal',
       bigText: 'dt-font-inter dt-text-lg dt-font-medium',
       header: 'dt-font-inter dt-text-lg dt-font-medium',
       buttonText: 'dt-font-inter dt-text-base',
@@ -348,12 +348,12 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
     sendButton: 'dt-h-5 dt-w-5 dt-text-black dt-rounded-full dt-bg-white',
     linkButton:
       'dt-inline-flex dt-items-center dt-transition-opacity dt-cursor-pointer hover:dt-opacity-50',
-    header: 'dt-max-h-[3.5rem] dt-min-h-[3.5rem] dt-px-4',
+    header: 'dt-max-h-[3.5em] dt-min-h-[3.5em] dt-px-4',
     sectionHeader: 'dt-px-4',
     input:
       'dt-text-xs dt-text-white dt-bg-black dt-px-2 dt-py-2 dt-border-b dt-border-neutral-600 focus:dt-rounded-md dt-outline-none focus:dt-ring focus:dt-ring-white disabled:dt-text-white/50',
     outlinedInput:
-      'dt-text-sm dt-h-[3.75rem] dt-text-white dt-bg-subtle-night dt-px-3 dt-py-2.5 dt-border-2 dt-border-neutral-600 dt-rounded-lg focus-within:dt-bg-black  focus-within:dt-border-white focus:dt-outline-none dt-rounded-2xl',
+      'dt-text-sm dt-h-[3.75em] dt-text-white dt-bg-subtle-night dt-px-3 dt-py-2.5 dt-border-2 dt-border-neutral-600 dt-rounded-lg focus-within:dt-bg-black  focus-within:dt-border-white focus:dt-outline-none dt-rounded-2xl',
     textArea:
       'dt-text-sm dt-text-neutral-200 dt-bg-black dt-border dt-rounded-2xl dt-px-2 dt-py-1 dt-border-neutral-600 dt-placeholder-neutral-600 dt-pr-10 dt-outline-none disabled:dt-text-neutral-200/50',
     messageBubble: 'dt-px-4 dt-py-2 dt-rounded-2xl dt-text-white',
@@ -366,10 +366,10 @@ export const defaultVariables: Record<ThemeType, ThemeValues> &
     notificationsDivider: 'dt-hidden',
     notificationHeader: 'dt-border-b dt-border-neutral-900',
     modalWrapper:
-      'dt-fixed dt-z-50 dt-top-0 dt-w-full dt-h-full dt-right-0 sm:dt-absolute sm:dt-top-16 sm:dt-w-[30rem] sm:dt-h-[40rem]',
+      'dt-fixed dt-z-50 dt-top-0 dt-w-full dt-h-full dt-right-0 sm:dt-absolute sm:dt-top-16 sm:dt-w-[30em] sm:dt-h-[40em]',
     modal: 'dt-rounded-none dt-shadow-md sm:dt-rounded-3xl',
     sliderWrapper:
-      'dt-fixed dt-z-50 dt-top-auto dt-bottom-0 dt-w-full dt-h-full sm:dt-w-[30rem] sm:dt-h-[40rem] sm:dt-right-10 sm:dt-top-auto',
+      'dt-fixed dt-z-50 dt-top-auto dt-bottom-0 dt-w-full dt-h-full sm:dt-w-[30em] sm:dt-h-[40em] sm:dt-right-10 sm:dt-top-auto',
     slider: 'dt-rounded-none dt-shadow-md sm:dt-rounded-t-3xl',
     button:
       'dt-bg-white dt-text-black dt-border dt-border-white hover:dt-opacity-60',

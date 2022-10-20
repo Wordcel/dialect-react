@@ -7,6 +7,7 @@ import { useTheme } from '../../../common/providers/DialectThemeProvider';
 import ResendIcon from '../../../Icon/Resend';
 import CancelIcon from '../../../Icon/Cancel';
 import OutlinedInput from '../../../common/primitives/OutlinedInput';
+import { Check } from '../../../Icon';
 
 interface IVerificationInputProps {
   description?: string;
@@ -79,7 +80,9 @@ export const VerificationInput = ({
             onClick={sendCode}
             className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
           >
-            Submit
+            <span className=' dt-ml-1 dt-text-[#64758B] '>
+              Submit
+            </span>
           </Button>
         }
       />

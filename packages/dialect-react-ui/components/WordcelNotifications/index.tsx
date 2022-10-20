@@ -15,6 +15,7 @@ import GatedWrapper from '../common/GatedWrapper';
 import { useTheme } from '../common/providers/DialectThemeProvider';
 import { Route, Router, useRoute } from '../common/providers/Router';
 import type { Channel } from '../common/types';
+import { TriangleIcon } from '../Icon';
 import { RouteName } from './constants';
 import Header from './Header';
 import NotificationsList from './screens/NotificationsList';
@@ -105,6 +106,7 @@ function InnerNotifications(props: NotificationsProps): JSX.Element {
 
   return (
     <div className="dt-h-full">
+      <TriangleIcon className="dt-absolute dt-top-0 dt-right-0 dt--mt-3" />
       <Header
         threadId={thread?.id}
         isWeb3Enabled={isWeb3Enabled}
@@ -114,7 +116,7 @@ function InnerNotifications(props: NotificationsProps): JSX.Element {
       />
       <div
         className={clsx(
-          'dt-h-full dt-overflow-y-auto dt-pb-[3.5rem]',
+          'dt-h-full dt-overflow-y-auto dt-pb-[3em]',
           scrollbar
         )}
       >

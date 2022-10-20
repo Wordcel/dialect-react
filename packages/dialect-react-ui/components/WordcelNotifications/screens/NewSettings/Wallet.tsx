@@ -17,6 +17,7 @@ import { shortenAddress } from '../../../../utils/displayUtils';
 import { Button, Loader, Toggle } from '../../../common';
 import { P } from '../../../common/preflighted';
 import { useTheme } from '../../../common/providers/DialectThemeProvider';
+import { Check } from '../../../Icon';
 import IconButton from '../../../IconButton';
 
 type Web3Props = {
@@ -163,18 +164,24 @@ const Wallet = ({
             {!thread && !walletAddress && !isLoading && (
               <Button
                 onClick={fullEnableWallet}
-                className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+                className={clsx('dt-w-[72px] dt-h-[28px] dt-px-0')}
               >
-                Enable
+                <Check />
+                <span className=' dt-ml-1 dt-text-[#64758B] '>
+                  Enable
+                </span>
               </Button>
             )}
             {/* when address exists but no thread */}
             {walletAddress && !thread && !isLoading && (
               <Button
                 onClick={createWalletThread}
-                className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+                className={clsx( 'dt-w-[72px] dt-h-[28px] dt-px-0')}
               >
-                Enable
+                <Check />
+                <span className=' dt-ml-1 dt-text-[#64758B] '>
+                  Enable
+                </span>
               </Button>
             )}
             {/* when thread exists but no address
@@ -182,9 +189,12 @@ const Wallet = ({
             {thread && !walletAddress && !isLoading && (
               <Button
                 onClick={createWalletAddress}
-                className={clsx(addormentButton, 'dt-w-16 dt-h-9')}
+                className={clsx('dt-w-[72px] dt-h-[28px] dt-px-0')}
               >
-                Enable
+                <Check />
+                <span className=' dt-ml-1 dt-text-[#64758B] '>
+                  Enable
+                </span>
               </Button>
             )}
             {isLoading && (
@@ -201,7 +211,7 @@ const Wallet = ({
       </div>
 
       {walletEnabled && (
-        <div className="dt-flex dt-flex-row dt-space-x-2 dt-items-center dt-justify-between dt-mt-3">
+        <div className="dt-flex dt-flex-row dt-space-x-2 dt-items-center dt-justify-between dt-mt-[17px]">
           <P className={clsx(colors.label, textStyles.label, 'dt-opacity-60')}>
             Notifications {subscriptionEnabled ? 'on' : 'off'}
           </P>

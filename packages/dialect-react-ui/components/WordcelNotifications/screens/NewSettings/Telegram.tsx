@@ -228,9 +228,9 @@ const Telegram = () => {
                 className="dt-inline-block dt-cursor-pointer"
               >
                 <CancelIcon
-                  className={clsx('dt-inline-block dt-mr-0.5 dt-mb-0.5')}
-                  height={14}
-                  width={14}
+                  className={clsx('dt-inline-block dt-mr-0.5 dt-mb-0')}
+                  height={12}
+                  width={12}
                 />
                 Cancel
               </span>
@@ -249,9 +249,9 @@ const Telegram = () => {
                 className="dt-inline-block dt-cursor-pointer"
               >
                 <CancelIcon
-                  className={clsx('dt-inline-block dt-mr-0.5 dt-mb-0.5')}
-                  height={14}
-                  width={14}
+                  className={clsx('dt-inline-block dt-mr-0.5 dt-mb-0')}
+                  height={12}
+                  width={12}
                 />
                 Cancel
               </span>
@@ -267,20 +267,21 @@ const Telegram = () => {
       )}
 
       {isTelegramSaved && isVerified && !isUserEditing && (
-        <div className="dt-flex dt-flex-row dt-space-x-2 dt-items-center dt-mt-1">
+        <div className="dt-flex dt-flex-row dt-space-x-2 dt-items-center dt-justify-between dt-mt-[17px]">
+          <P className={clsx(textStyles.label, 'dt-opacity-60')}>
+            Notifications {subscriptionEnabled ? 'on' : 'off'}
+          </P>
+
           <Toggle
             type="checkbox"
             checked={subscriptionEnabled}
-            toggleSize="S"
+            toggleSize="M"
             onChange={(value) => {
               if (isToggling) return;
               return toggleTelegram(value);
             }}
           />
 
-          <P className={clsx(textStyles.small, 'dt-opacity-60')}>
-            Notifications {subscriptionEnabled ? 'on' : 'off'}
-          </P>
         </div>
       )}
     </div>
