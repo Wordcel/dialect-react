@@ -12,7 +12,7 @@ const SignMessageInfo = () => {
       >
         <Loader className="dt-mr-2" /> Waiting for your wallet
       </H3>
-      <P className="dt-text-center dt-max-w-sm dt-opacity-50 dt-font-inter dt-text-sm dt-font-medium dt-text-[#94A3B8]">
+      <P className="dt-text-center dt-max-w-sm dt-opacity-50 dt-font-inter dt-text-[1em] dt-font-medium dt-text-[#94A3B8]">
         To continue please prove you own a wallet by approving signing request.
         It is free and does not involve the network.
       </P>
